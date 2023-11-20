@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+</head>
+<body>
+    <div id="start-meeting">
+        <h2>Start Presentation</h2>
+        <label>Enter username: </label>
+        <input type="text" id="username">
+        <br>
+        <label>Enter presentation name: </label>
+        <input type="text" id="presentation-name">
+        <br>
+        <button id="start">Start</button>
+    </div>
+    <div id="for-presenter" style="display: none;">
+        <input type="text" id="publish-input">
+        <button id="publish-button">Publish</button>
+        <br>
+        <canvas id="presenter-canvas"></canvas>
+    </div>
+    <div id="for-viewer" style="display: none;">
+        <p id="published-msg">Nothing yet...</p>
+        <br>
+        <canvas id="viewer-canvas"></canvas>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room WebRTC</title>
+    
+</head>
+<body>
+    <h1>Room WebRTC</h1>
+    <hr>
+    <div id="room-selection">
+        <h2>Room selection</h2>
+        <label for="room-name-input">Enter room name: </label>
+        <input type="text" name="Room Name" id="room-name-input">
+        <button id="go-button">Go</button>
+    </div>
+    <div id="room" style="display: none;">
+        <h2>Room</h2>
+        <h3>Message:</h3>
+        <span id="span-msg"></span>
+        <br>
+        <input type="text" id="input-msg">
+        <button id="button-send-msg">Send</button>
+        <br>
+        <video id="local-video" autoplay></video>
+        <video id="remote-video" autoplay></video>
+    </div>
+
+    <div id="info">
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
