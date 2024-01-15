@@ -10,8 +10,5 @@
 - It does that through the OS using system calls.
 - Ways to interact with file in node.js:
   - Using Promises API (**Recommended**)
-  - Using Callback API (**If performance is critical**)
-  - Using Synchronous API (**Not recommended** unless needed because it blocks the main thread)
-
-
-
+  - Using Callback API (**If performance is critical**, High memory usage)
+  - Using Synchronous API (Fastest and Lowest memory usage but **Not recommended** unless needed because it blocks the main thread)
