@@ -19,7 +19,7 @@
    - Internal buffer size 64KB by default.
    - Only starts reading data if we listen to 'data' event of the stream.
 
-3. **Duplex**: Both readable and writable. Consequently it uses to buffers internally. One to read other to write.
+3. **Duplex**: Both readable and writable. Consequently it uses two buffers internally. One to read other to write.
    ![Duplex Stream](duplex.png)
    
    - It has 2 separate internal buffers.
